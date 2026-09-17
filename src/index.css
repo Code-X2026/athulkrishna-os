@@ -1,18 +1,46 @@
 @import "tailwindcss";
 
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
 html,
-body,
-#root{
-    width:100%;
-    height:100%;
-    margin:0;
-    padding:0;
-    font-family:Inter,sans-serif;
-    background:#020617;
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    background: #020617;
+    color: #f8fafc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+code, kbd, samp, pre, .font-mono, .font-mono-tech {
+    font-family: var(--font-mono) !important;
+    letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    overflow-wrap: break-word;
+}
+
+
+#root {
+    width: 100%;
+    min-height: 100vh;
 }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -22,3 +50,149 @@ body {
 section {
     scroll-margin-top: 76px;
 }
+
+/* Premium Motion & Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.94);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes floatSmooth {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes ambientPulse {
+    0%, 100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.08);
+    }
+}
+
+@keyframes shimmerGlow {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-scale {
+    animation: fadeInScale 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-float {
+    animation: floatSmooth 5s ease-in-out infinite;
+}
+
+.animate-ambient {
+    animation: ambientPulse 8s ease-in-out infinite;
+}
+
+/* GPU-Accelerated Hardware Motion & Easing */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Butter-Smooth Element Transitions */
+a, button, .interactive-card, article, img {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                background-color 0.35s ease, 
+                border-color 0.35s ease, 
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+}
+
+.interactive-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px -15px rgba(6, 182, 212, 0.2);
+}
+
+/* Silky Scroll Reveal Curves */
+.reveal, .reveal-card {
+    opacity: 0;
+    transform: translateY(40px) scale(0.97);
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.is-visible, .reveal-card.is-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Multi-step Progressive Delays */
+.delay-1 { transition-delay: 0.12s; }
+.delay-2 { transition-delay: 0.24s; }
+.delay-3 { transition-delay: 0.36s; }
+.delay-4 { transition-delay: 0.48s; }
+.delay-5 { transition-delay: 0.6s; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+/* Recruiter Print Optimization */
+@media print {
+  header, .recruiter-bar, .navbar, .scroll-progress, .scroll-top-btn, button, .hero-actions, .contact-form-wrapper {
+    display: none !important;
+  }
+  
+  body, html {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  section {
+    page-break-inside: avoid;
+    border-color: #cbd5e1 !important;
+    background: transparent !important;
+  }
+
+  h1, h2, h3, h4, strong {
+    color: #0f172a !important;
+  }
+
+  p, span, li {
+    color: #334155 !important;
+  }
+
+  .matrix-card, .project-card, article {
+    border: 1px solid #cbd5e1 !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+  }
+}
+

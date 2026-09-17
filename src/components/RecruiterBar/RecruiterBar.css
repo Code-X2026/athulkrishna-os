@@ -1,0 +1,154 @@
+.recruiter-bar {
+  position: relative;
+  width: 100%;
+  background: #09090b;
+  border-bottom: 1px solid #27272a;
+  color: #f4f4f5;
+  font-family: var(--font-sans, 'Inter', sans-serif);
+  font-size: 0.8125rem;
+  z-index: 45;
+}
+
+.recruiter-bar-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 8px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Left Status Pill */
+.recruiter-status-block {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.recruiter-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.7);
+  flex-shrink: 0;
+  animation: pulseGreenSoft 2s ease-in-out infinite;
+}
+
+@keyframes pulseGreenSoft {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.25); }
+}
+
+.recruiter-status-text {
+  color: #d4d4d8;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  white-space: normal;
+}
+
+.recruiter-status-text strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Right Actions Group */
+.recruiter-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.recruiter-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid transparent;
+}
+
+/* 1-Click WhatsApp Button (Linear Green Accent) */
+.recruiter-btn-whatsapp {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.35);
+  color: #34d399 !important;
+}
+
+.recruiter-btn-whatsapp:hover {
+  background: rgba(16, 185, 129, 0.22);
+  border-color: #10b981;
+  color: #ffffff !important;
+}
+
+/* 1-Click Resume PDF (Refined Steel Button) */
+.recruiter-btn-resume {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #ffffff !important;
+}
+
+.recruiter-btn-resume:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff !important;
+}
+
+
+/* 1-Click Cover Letter PDF */
+.recruiter-btn-cover {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.35);
+  color: #38bdf8 !important;
+}
+
+.recruiter-btn-cover:hover {
+  background: rgba(56, 189, 248, 0.22);
+  border-color: #38bdf8;
+  color: #ffffff !important;
+}
+
+
+/* Direct Email (Neutral Dark Glass) */
+.recruiter-btn-email,
+.recruiter-btn-phone {
+  background: #18181b;
+  border-color: #27272a;
+  color: #a1a1aa !important;
+}
+
+.recruiter-btn-email:hover,
+.recruiter-btn-phone:hover {
+  background: #27272a;
+  color: #ffffff !important;
+  border-color: #3f3f46;
+}
+
+@media (max-width: 768px) {
+  .recruiter-bar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 16px;
+    gap: 8px;
+  }
+
+  .recruiter-actions-group {
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+
+  .recruiter-action-btn {
+    padding: 4px 10px;
+    font-size: 0.72rem;
+  }
+}

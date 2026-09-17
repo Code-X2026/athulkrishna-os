@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <!-- Outer PDF Paper Background -->
+  <rect width="1200" height="900" fill="#d5dede" />
+  
+  <!-- Outer Double Border Box -->
+  <rect x="40" y="40" width="1120" height="820" fill="#d5dede" stroke="#758589" stroke-width="9" />
+  <rect x="52" y="52" width="1096" height="796" fill="none" stroke="#99a8ac" stroke-width="2" />
+
+  <!-- Cisco Logo Top Left -->
+  <g transform="translate(130, 95)">
+    <!-- 9 Cisco Bridge Bars -->
+    <path d="M0 32 v-16 M9 32 v-22 M18 32 v-28 M27 32 v-34 M36 32 v-28 M45 32 v-22 M54 32 v-16" stroke="#000000" stroke-width="3.5" stroke-linecap="round"/>
+    <text x="0" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="800" fill="#000000" letter-spacing="1">CISCO</text>
+  </g>
+
+  <!-- Cisco Certifications Header -->
+  <text x="600" y="195" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="400" fill="#2d3748">Cisco Certifications</text>
+  
+  <!-- Candidate Full Name -->
+  <text x="600" y="275" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="700" fill="#000000" letter-spacing="2">ATHUL KRISHNA O S</text>
+
+  <!-- Subtitle Text -->
+  <text x="600" y="340" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#2d3748">has successfully completed the Cisco certification exam requirements and is recognized as a</text>
+
+  <!-- Main Certification Title -->
+  <text x="600" y="415" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="#000000">Cisco Certified Network Associate</text>
+
+  <!-- Central Official CCNA Emblem / Badge -->
+  <g transform="translate(600, 520)">
+    <!-- Arch Lines Top & Bottom -->
+    <path d="M -90 -45 C -40 -70 40 -70 90 -45" fill="none" stroke="#1a202c" stroke-width="3" />
+    <path d="M -90 45 C -40 70 40 70 90 45" fill="none" stroke="#1a202c" stroke-width="3" />
+    
+    <path d="M -75 -35 C -30 -58 30 -58 75 -35" fill="none" stroke="#1a202c" stroke-width="1.5" />
+    <path d="M -75 35 C -30 58 30 58 75 35" fill="none" stroke="#1a202c" stroke-width="1.5" />
+
+    <!-- Text inside emblem -->
+    <text x="0" y="-22" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#1a202c" letter-spacing="2">CISCO</text>
+    <text x="0" y="-6" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#1a202c" letter-spacing="2">CERTIFIED</text>
+    <line x1="-50" y1="4" x2="50" y2="4" stroke="#1a202c" stroke-width="1" />
+    <text x="0" y="32" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="800" fill="#1a202c" letter-spacing="1">CCNA</text>
+  </g>
+
+  <!-- Certificate Key Dates & ID (Bottom Left Center) -->
+  <g transform="translate(470, 665)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#2d3748">
+    <text x="0" y="0" text-anchor="end">Date Certified</text>
+    <text x="30" y="0" text-anchor="start" font-weight="600" fill="#000000">June 23, 2026</text>
+
+    <text x="0" y="26" text-anchor="end">Valid Through</text>
+    <text x="30" y="26" text-anchor="start" font-weight="600" fill="#000000">June 23, 2029</text>
+
+    <text x="0" y="52" text-anchor="end">Cisco ID No.</text>
+    <text x="30" y="52" text-anchor="start" font-weight="600" fill="#000000">CSCO15240575</text>
+  </g>
+
+  <!-- Executive Signature (Bottom Right) -->
+  <g transform="translate(860, 690)">
+    <!-- Signature Graphic -->
+    <path d="M -30 -10 C 0 -35 25 15 45 -15 C 65 -30 80 10 110 -5 C 130 -15 140 5 160 -10" fill="none" stroke="#1e293b" stroke-dasharray="none" stroke-width="2.5" />
+    <text x="0" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#000000">Chuck Robbins</text>
+    <text x="0" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#475569">Chuck Robbins</text>
+    <text x="0" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#475569">Chair and Chief Executive Officer</text>
+    <text x="0" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#475569">Cisco Systems, Inc.</text>
+  </g>
+
+  <!-- Footer Verification Details (Bottom Left) -->
+  <g transform="translate(100, 785)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" fill="#475569">
+    <text x="0" y="0">Validate this certificate's authenticity at</text>
+    <text x="0" y="18" fill="#1e293b">www.cisco.com/go/verifycertificate</text>
+    <text x="0" y="36">Certificate Verification No. <tspan font-weight="600" fill="#000000">1b57ceb3c4cd49c4869e273fa3e9b8ef</tspan></text>
+  </g>
+
+  <text x="100" y="850" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" fill="#64748b">© 2026 Cisco and/or its affiliates</text>
+</svg>

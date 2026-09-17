@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <!-- Outer Paper Background -->
+  <rect width="1200" height="900" fill="#d5dede" />
+  
+  <!-- Outer Double Border Box -->
+  <rect x="45" y="45" width="1110" height="810" fill="#d5dede" stroke="#758589" stroke-width="8" />
+  <rect x="57" y="57" width="1086" height="786" fill="none" stroke="#9bb0b5" stroke-width="2" />
+
+  <!-- Cisco Logo Top Left -->
+  <g transform="translate(135, 100)">
+    <!-- Cisco Bars -->
+    <path d="M0 28 v-14 M8 28 v-20 M16 28 v-26 M24 28 v-32 M32 28 v-26 M40 28 v-20 M48 28 v-14" stroke="#000000" stroke-width="3" stroke-linecap="round"/>
+    <text x="0" y="48" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#000000" letter-spacing="1">CISCO</text>
+  </g>
+
+  <!-- Header -->
+  <text x="600" y="205" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="400" fill="#2c3e50">Cisco Certifications</text>
+  
+  <!-- Candidate Name: ATHUL KRISHNA O S -->
+  <text x="600" y="285" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="bold" fill="#000000" letter-spacing="1.5">ATHUL KRISHNA O S</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="348" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334e68">has successfully completed the Cisco certification exam requirements and is recognized as a</text>
+
+  <!-- Certification Name -->
+  <text x="600" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="bold" fill="#000000">Cisco Certified Network Associate</text>
+
+  <!-- Central CCNA Emblem -->
+  <g transform="translate(600, 525)">
+    <!-- Outer Arches -->
+    <path d="M -85 -45 C -40 -70 40 -70 85 -45" fill="none" stroke="#102a43" stroke-width="2.5" />
+    <path d="M -85 45 C -40 70 40 70 85 45" fill="none" stroke="#102a43" stroke-width="2.5" />
+    
+    <path d="M -70 -35 C -30 -56 30 -56 70 -35" fill="none" stroke="#102a43" stroke-width="1.2" />
+    <path d="M -70 35 C -30 56 30 56 70 35" fill="none" stroke="#102a43" stroke-width="1.2" />
+
+    <!-- Emblem Text -->
+    <text x="0" y="-22" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#102a43" letter-spacing="2">CISCO</text>
+    <text x="0" y="-8" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="bold" fill="#102a43" letter-spacing="2">CERTIFIED</text>
+    <line x1="-45" y1="2" x2="45" y2="2" stroke="#102a43" stroke-width="1" />
+    <text x="0" y="30" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#102a43" letter-spacing="1">CCNA</text>
+  </g>
+
+  <!-- Dates and Cisco ID -->
+  <g transform="translate(480, 665)" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334e68">
+    <text x="0" y="0" text-anchor="end">Date Certified</text>
+    <text x="25" y="0" text-anchor="start" font-weight="bold" fill="#000000">June 23, 2026</text>
+
+    <text x="0" y="24" text-anchor="end">Valid Through</text>
+    <text x="25" y="24" text-anchor="start" font-weight="bold" fill="#000000">June 23, 2029</text>
+
+    <text x="0" y="48" text-anchor="end">Cisco ID No.</text>
+    <text x="25" y="48" text-anchor="start" font-weight="bold" fill="#000000">CSCO15240575</text>
+  </g>
+
+  <!-- Signature Right -->
+  <g transform="translate(860, 690)">
+    <!-- Cursive Signature -->
+    <path d="M -20 -15 C 0 -35 25 15 45 -10 C 65 -25 80 10 110 -5 C 130 -15 140 5 160 -10" fill="none" stroke="#003366" stroke-width="2" />
+    <text x="0" y="22" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" fill="#000000">Chuck Robbins</text>
+    <text x="0" y="38" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#486581">Chuck Robbins</text>
+    <text x="0" y="52" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#486581">Chair and Chief Executive Officer</text>
+    <text x="0" y="66" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#486581">Cisco Systems, Inc.</text>
+  </g>
+
+  <!-- Footer Verification Details -->
+  <g transform="translate(100, 780)" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#486581">
+    <text x="0" y="0">Validate this certificate's authenticity at</text>
+    <text x="0" y="16" fill="#000000">www.cisco.com/go/verifycertificate</text>
+    <text x="0" y="32">Certificate Verification No. <tspan font-weight="bold" fill="#000000">1b57ceb3c4cd49c4869e273fa3e9b8ef</tspan></text>
+  </g>
+
+  <text x="100" y="845" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#627d98">© 2026 Cisco and/or its affiliates</text>
+</svg>
